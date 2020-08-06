@@ -1,6 +1,13 @@
 * {
   font-family: 'Saira Semi Condensed', sans-serif;
 }
+body {
+
+  background-image: url('/img/hellracers-footer-logo.png');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
 h1, h2, h3, h4, h5 {
   font-family: 'Bungee', 'Saira Semi Condensed';
   text-transform: uppercase;
