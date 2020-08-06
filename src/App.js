@@ -14,17 +14,11 @@ function App() {
   const [twoLapBuffer, setTwoLapBuffer] = useState(0);
 
   useEffect(() => {
-    console.log("Recalculating");
     let calcLapsRemaining = (timeLeft*60)/averageLaptime;
-    console.log("Laps remaining: " + calcLapsRemaining);
     let calcFuelRequired = calcLapsRemaining * averageFuelLap;
-    console.log("Fuel required: " + calcFuelRequired);
     let calcFuelToTake = calcFuelRequired - fuelInTank;
-    console.log("Fuel to take: " + calcFuelToTake);
     let calcOneLapBuffer = calcFuelToTake + (1*averageFuelLap);
-    console.log("One lap buffer: " + calcOneLapBuffer);
     let calcTwoLapBuffer = calcOneLapBuffer + (1*averageFuelLap);
-    console.log("Two lap buffer: " + calcTwoLapBuffer);
 
     setLapsRemaining(Math.ceil(calcLapsRemaining));
     setFuelRequired(Math.ceil(calcFuelRequired));
@@ -36,7 +30,6 @@ function App() {
 
 
   return (
-
     <div className="container">
       <div className="App">
         <header><h1>Fuel Calculator</h1></header>
