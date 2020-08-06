@@ -2,7 +2,8 @@
   font-family: 'Saira Semi Condensed', sans-serif;
 }
 body {
-
+  background-color: #2461CE;
+  color: #FFC400;
   background-image: url('/img/hellracers-footer-logo.png');
   background-size: 150px;
   background-repeat: no-repeat;
